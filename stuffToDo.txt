@@ -1,0 +1,29 @@
+LIST OF THINGS TO DO
+
+Huma: 
+
+1. Create Login Page html and Css
+2. Create Home Page html and Css
+3. Create Settings Page
+4. Create Server Part
+
+Amir: 
+
+1. Change password and Username
+2. Work on Actual Messaging
+3. help mohit with resful if he needs help
+4. Create Server Part
+
+Joshua: 
+
+1. Work on actual messaging
+2. Login part
+3. help mohit if he needs help
+4. Create Server Part
+
+Mohit: 
+
+1. TRY making RESTFUL ASSpect of it
+2. Create Databases
+2. Create Server Part
+
