@@ -13,3 +13,4 @@ echo "Connected successfully</p>";
 } catch (PDOException $e){
     echo "h1 class=\"text-danger\">Connectionn failed: </h1>" . "<p>" . $e->getMessage() . "</p>";
 }
+//i dont know what im doing
