@@ -8,5 +8,12 @@ $sql = "INSERT INTO USERS(username, emailAddress, pass) VALUES(".$username.",".$
 
 include "_dbConnection.php";
 
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+  
+  $conn->close();
 
 ?>
