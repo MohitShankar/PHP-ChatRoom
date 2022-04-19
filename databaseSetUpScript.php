@@ -22,9 +22,9 @@
          //2)creating table users
        $sql = "CREATE TABLE USERS(
         id INT(10) AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(100) NOT NULL,
-        description VARCHAR(255) NOT NULL,
-        image LONGBLOB NULL
+        username VARCHAR(100) NOT NULL, 
+        emailAddress VARCHAR(255) NOT NULL,
+        pass VARCHAR(100) NOT NULL
         )";
 
         $connect->exec($sql);
@@ -34,10 +34,11 @@
          //3)creating table messages
          //Josh: I added the messagedate part so that we can 
          //show messages based off of when they were sent
+         //I also changed the names
        $sql = "CREATE TABLE MESSAGES(
         id INT(10) AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(100) NOT NULL,
-        description VARCHAR(255) NOT NULL,
+        username VARCHAR(100) NOT NULL,
+        messages VARCHAR(255) NOT NULL,
         messageDate datetime default NOT NULL,
         image LONGBLOB NULL
         )";
