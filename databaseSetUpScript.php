@@ -32,10 +32,13 @@
 
         
          //3)creating table messages
+         //Josh: I added the messagedate part so that we can 
+         //show messages based off of when they were sent
        $sql = "CREATE TABLE MESSAGES(
         id INT(10) AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
         description VARCHAR(255) NOT NULL,
+        messageDate datetime default NOT NULL,
         image LONGBLOB NULL
         )";
 
