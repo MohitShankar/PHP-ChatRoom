@@ -12,30 +12,25 @@
 <body>
     <?php
     try{
-        //1) dropping the table in case it exists
-        $sql = "DROP TABLE IF EXISTS ITEMS";
-
-        $connect->exec($sql);
-        echo "ITEMS table dropped!</br>";
-      
+        
     
          //2)creating table users
-       $sql = "CREATE TABLE USERS(
+       $sqluser = "CREATE TABLE USERS(
         id INT(10) AUTO_INCREMENT PRIMARY KEY,
         username VARCHAR(100) NOT NULL, 
         emailAddress VARCHAR(255) NOT NULL,
         pass VARCHAR(100) NOT NULL
         )";
 
-        $connect->exec($sql);
-        echo "Table ITEMS created successfully</br>";
+        $connect->exec($sqluser);
+        echo "Table USERS created successfully</br>";
 
         
          //3)creating table messages
          //Josh: I added the messagedate part so that we can 
          //show messages based off of when they were sent
          //I also changed the names
-       $sql = "CREATE TABLE MESSAGES(
+       $sqlmessage = "CREATE TABLE MESSAGES(
         id INT(10) AUTO_INCREMENT PRIMARY KEY,
         username VARCHAR(100) NOT NULL,
         messages VARCHAR(255) NOT NULL,
@@ -43,12 +38,12 @@
         image LONGBLOB NULL
         )";
 
-        $connect->exec($sql);
-        echo "Table ITEMS created successfully</br>";
+        $connect->exec($sqlmessage);
+        echo "Table MESSAGES created successfully</br>";
  
        //create users
     } catch(PDOException $e){
-       echo $sql . "<br>" . $e->getMessage();
+       echo $sqluser . "<br>" . $e->getMessage();
     }
     ?>
    
