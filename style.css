@@ -1,0 +1,123 @@
+#body {
+    background-color: #37393f; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    /*closest font match, change it if there is a better match */
+
+}
+
+nav {
+   font-family: Arial, sans-serif;
+   color: #41a0dc;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 10px;
+   margin-left: 0;
+}
+   
+a {
+   text-decoration: none;
+}
+
+li a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+form { color: gray;}
+
+/*header { background-color: #202225;
+       background-image: url(namebg.png);
+       background-position: left 0;
+       background-repeat: no-repeat;
+       height: 30px;
+       width: 100;
+}
+*/
+       header { background-color: #202225;
+        background-image: url(namebg.png);
+        background-position: left 0;
+        background-repeat: no-repeat;
+        height: 30px;
+       }
+
+       input[type=email] {
+           width: 100%;
+           padding: 12px 20px;
+           margin: 8px 0;
+           box-sizing: border-box;
+           border: none;
+           background-color: #202225;
+           color: white;
+       }
+
+       input[type=text] {
+           width: 100%;
+           padding: 12px 20px;
+           margin: 8px 0;
+           box-sizing: border-box;
+           border: none;
+           background-color: #202225;
+           color: white;
+       
+       }
+
+       form {
+           color: #A3A6A9;
+       }
+
+       .button { 
+           background-color: #5D67F6;
+           color: white;
+           display: block;
+           justify-content: center;
+           align-items: center;
+           margin: 0 auto;
+           font-size: 16px;
+           padding: 14px 40px;
+           border-radius: 8px;
+           
+       }
+
+       h2 {
+           color: white;
+           font-style: bold; 
+           text-align: center;
+       }
+       .send { 
+           background-color: #41444B;
+           color: white;
+           display: block;
+           justify-content: center;
+           align-items: center;
+           margin: 0 auto;
+           font-size: 16px;
+           padding: 14px 40px;
+           border-radius: 8px;
+           
+       }
+
+
+       
+           textarea{
+               margin-left: auto;
+               margin-right: auto;
+               justify-content: center;
+           }
+       
+       
+       #textarea,#buttons {
+           display:inline-block;
+           vertical-align: top;
+           background-color: transparent;
+
+       }
