@@ -1,10 +1,11 @@
 <?php 
-$mysqlhost = "localhost:3306";
+$mySqlhost = "localhost:3306";
 $username = "root";
 $password = "";
 $myDB     = "chatroom2";
 $charset = "utf8mb4";
 $dsn = "mysql:host=$mySqlhost;dbname=$myDB;charset=$charset";
+echo $dsn;
 try{
    $connect = new PDO($dsn, $username, $password);
 //set the PDO error mode to exception

@@ -34,8 +34,7 @@
         id INT(10) AUTO_INCREMENT PRIMARY KEY,
         username VARCHAR(100) NOT NULL,
         messages VARCHAR(255) NOT NULL,
-        messageDate datetime default NOT NULL,
-        image LONGBLOB NULL
+        messageDate datetime default NOT NULL
         )";
 
         $connect->exec($sqlmessage);

@@ -1,19 +1,22 @@
 <?php 
 
-$username = $_GET["username"];
+$chatUsername = $_GET["username"];
 $email = $_GET["email"];
-$password = $_GET["password"];
-
-$sql = "INSERT INTO USERS(username, emailAddress, pass) VALUES(".$username.",".$email.",".$password.")"
-
+$chatPassword = $_GET["password"];
 include "_dbConnection.php";
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  
-  $conn->close();
+try{
+    $sql = "INSERT INTO USERS(username, emailAddress, pass) VALUES(:user, :email, :pass)";
+    $stmt = $connect -> prepare($sql);
 
+    $stmt -> bindParam(":user", $chatUsername);
+    $stmt -> bindParam(":email", $email);
+    $stmt -> bindParam(":pass", $chatPassword);
+
+    $stmt -> execute();
+
+}catch(PDOException $e){
+    echo $sql . "<br>" . $e -> getMessage();
+}
+$connect = null;
 ?>

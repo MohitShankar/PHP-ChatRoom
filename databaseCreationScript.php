@@ -1,5 +1,5 @@
 <?php 
-$mysqlhost = "localhost:3306";
+$mySqlhost = "localhost:3306";
 $username = "root";
 $password = "";
 //$myDB     = "chatroom2";
