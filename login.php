@@ -1,7 +1,7 @@
 <?php
     if(!isset($_POST["btnLogin"])){
     ?>
-        <form action="login.htm" method="post">
+        <form action="login.html" method="post">
             <input type="text" name="username" value="username">
             <input type="text" name="password" value="password">
             <input type="submit" name="btnLogin" value="Submit">
