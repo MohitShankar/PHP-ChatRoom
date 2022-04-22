@@ -21,7 +21,7 @@
 
             foreach ($stmt->fetchAll() as $k => $row) {
                 ?>
-                <div style="border:1px solid #333; background-color:#fbd2d7; border-radius:5px; padding:16px;" align="center">
+                <div style="border:1px solid #333; background-color:#fbd2d7; border-radius:5px; padding:16px; align=center">
                     <h4><?php echo $row["firstname"]; ?></h4>
                     <h4><?php echo $row["lastname"]; ?></h4>
                     <h4><?php echo $row["username"]; ?></h4>
