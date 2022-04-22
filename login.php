@@ -17,7 +17,13 @@
             $sql = "SELECT * FROM users WHERE username LIKE ? AND password LIKE ?";
             $stmt = $connect->prepare($sql);
             $stmt->execute([$username, $password]);
-            
+           
+            }
+        } 
+        catch (PDOException $e) {
+            echo $sql . "<br>" .$e->getMessage();
+        }
+           
         $connect=null;
     }
     ?>
