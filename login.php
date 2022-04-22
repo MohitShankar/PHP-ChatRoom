@@ -18,7 +18,6 @@
             $stmt = $connect->prepare($sql);
             $stmt->execute([$username, $password]);
            
-            }
         } 
         catch (PDOException $e) {
             echo $sql . "<br>" .$e->getMessage();
