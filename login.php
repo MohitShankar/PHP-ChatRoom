@@ -8,13 +8,13 @@
         </form>
     <?php
     } else {
-        include 'connectToDbPDO.php';
+        include '_dbConnection.php';
 
         try {
             $username = isset($_POST["username"]) ? $_POST["username"] : null;
             $password = isset($_POST["password"]) ? $_POST["password"] : null;
 
-            $sql = "SELECT * FROM user WHERE username LIKE ? AND password LIKE ?";
+            $sql = "SELECT * FROM users WHERE username LIKE ? AND password LIKE ?";
             $stmt = $connect->prepare($sql);
             $stmt->execute([$username, $password]);
             
